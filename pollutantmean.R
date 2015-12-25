@@ -22,3 +22,14 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   }
 }
 
+pollutantTest <- function(){
+	testRes <- c(4.065, 1.706, 1.281)
+	a <- pollutantmean("specdata", "sulfate", 1:10)  ##  4.064)
+	b <- pollutantmean("specdata", "nitrate", 70:72) ##, "==", 1.706)
+	c <- pollutantmean("specdata", "nitrate", 23)    ##"==", 1.281)
+	delta <- testRes - c(a,b,c)
+	res <- matrix(c(a,b,c,testRes, delta), 3,3)
+	colnames (res) <-  c("Calculated","Expected", "Error")
+	res
+}
+
