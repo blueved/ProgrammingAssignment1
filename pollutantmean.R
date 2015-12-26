@@ -1,3 +1,4 @@
+## 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
   ## 'directory' is a character vector of length 1 indicating
   ## the location of the CSV files
@@ -5,7 +6,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   if(pollutant != "nitrate" && pollutant != "sulfate"){
     message ("Error invalid pollutant: ",pollutant)
   }
-  else{
+  else{ 
     currrentDir<-getwd()
     setwd(directory)
     ## build a list of the pollutant
@@ -21,7 +22,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
     mean(pList)
   }
 }
-
+## unitest
 pollutantTest <- function(){
 	testRes <- c(4.065, 1.706, 1.281)
 	a <- pollutantmean("specdata", "sulfate", 1:10)  ##  4.064)

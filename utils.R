@@ -1,4 +1,5 @@
-## Utilities-
+##################################################
+## Utilities
 ## generate the file name to read
 buildFileName <- function (id){
   a<-"00"
@@ -24,8 +25,6 @@ runTest1 <- function(){
   
   rbind(result, test)
 }
-
-
 
 ##~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ##

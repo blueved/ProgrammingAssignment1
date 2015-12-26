@@ -2,13 +2,12 @@ complete <- function(directory, id = 1:332) {
 	currrentDir<-getwd()
 	setwd(directory)	
 	## Return a data frame of the form:
-	## id nobs
+	## id nobs 
 	## 1  117
 	## 2  1041
 	## ...
 	## where 'id' is the monitor ID number and 'nobs' is the
 	## number of complete cases.
-	message('test the git')
 	
 	index <- 1
 	df <- data.frame(matrix(ncol = 2))

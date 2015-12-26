@@ -16,5 +16,5 @@ corr <- function(directory, threshold = 0) {
 			}
 		}
 		setwd(currrentDir)
-		xx
+		xx 
 }
